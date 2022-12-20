@@ -45,7 +45,7 @@ p{
 }
 
 .section-m1{
-    margin: 4px 0;
+    margin: 5px 0;
 }
 
 button.normal {
@@ -60,6 +60,21 @@ button.normal {
     outline: none;
     transition: 0.2s;
 }
+
+button.white {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 8px 18px;
+    color: white;
+    background-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid white;
+    outline: none;
+    transition: 0.2s;
+}
+
+
 
 body{
     width: 100%;
@@ -299,36 +314,144 @@ body{
     color: var(--bg-color);
 }
 
-#call-banner {
+#call-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#call-banner .banner-box{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
     background:url(/img/banner-call-action.jpg);
-    min-width: 50%;
-    height: 50vh;
+    min-width: 580px;
+    height: 40vh;
     background-size: cover;
     background-position: center;
+    padding: 30px;
+}
+
+#call-banner .box2{
+    background-image: url(/img/banner-call-action2.jpeg);
+
 }
 
 #call-banner h4{
-    color: yellow;
+    color:var(--bg-color);
     font-size: 20px;
-
+    font-weight: 300;
 }
 
 #call-banner h2{
     color: yellow;
-    font-size: 50px;
+    font-size: 30px;
+    font-weight: 800;
 }
 
-#call-banner  span{
+#call-banner span {
     color: var(--bg-color);
+    font-size: 15px;
+    font-weight: 500;
+    padding-bottom: 15px;
 }
-/* 
-.banner-box {
+
+#call-banner .banner-box:hover button{
+    background: black;
+    color: white;
+}
+
+#call-banner3 .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background:url(/img/commande-en-ligne-khomsa.png);
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#call-banner3 h4{
+    font-size: 16px;
+    color: var(--min-color);
+    font-weight: 800;
+}
+
+#call-banner3 h3{
+    font-size: 30px;
+    color: var(--min-color);
+    font-weight: 800;
+}
+
+
+#call-banner3 .box2{
+        background:url(/img/jus-khomsa.jpeg);  
+}
+
+#call-banner3 .box3{
+        background:url(/img/confiture-khomsa.jpeg);
+}
+
+#call-banner3 {
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+
+#newsletter {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
-} */
+    background-repeat:no-repeat;
+    background-position:20%  30%;
+    background-color: var(--min-color);
+}
+
+#newsletter h4{
+    font-size: 30px;
+    font-weight: 800;
+    color: rgb(253, 253, 252);
+}
+
+#newsletter p {
+    font-size: 14px;
+    font-weight: 600;
+    color: yellow;
+}
+
+#newsletter p span{
+    font-size: 14px;
+    font-weight:  600;
+    color: rgb(252, 252, 249);
+}
+
+#newsletter .form{
+    display: flex;
+    width: 40%;
+
+}
+#newsletter input{
+    height: 3rem;
+    padding: 0 1.25em;
+    font-size:  14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#newsletter button{
+    background-color: azure;
+    color: aqua;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
